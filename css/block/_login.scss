@@ -1,0 +1,198 @@
+.login {
+    margin-bottom: 166px;
+    .container {}
+
+    &_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &_header {
+        font-family: Inter;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 77.45px;
+        color: rgba(69, 68, 68, 1);
+        margin-bottom: 16px;
+
+    }
+
+    &_text {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.36px;
+        color: rgba(69, 68, 68, 1);
+        margin-bottom: 55px;
+    }
+
+    &-container {}
+
+    .label {}
+
+    .underline {}
+
+    &_forgot {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.36px;
+        text-decoration: underline;
+        margin-bottom: 70px;
+        color: rgba(0, 0, 0, 1);
+        width: 600px;
+        display: flex;
+        justify-content: end;
+
+    }
+
+    &_button {
+        display: block;
+        width: 560px;
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.05px;
+        background-color: rgba(69, 68, 68, 1);
+        color: white;
+        padding: 17px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        margin-bottom: 70px;
+    }
+
+    &_line--or {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    &_line {
+        width: 283px;
+        margin: 0;
+    }
+
+    &_or {
+        padding: 0px 8px;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.36px;
+
+    }
+
+    &_continue--display {
+        display: flex;
+        width: 50%;
+    }
+
+    &_continue {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.36px;
+        color: rgba(69, 68, 68, 1);
+
+
+    }
+
+    &_list {
+        width: 265px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 53px;
+        margin-bottom: 48px;
+    }
+
+    &_item {
+        width: 65px;
+        height: 65px;
+        gap: 0px;
+        opacity: 0.65px;
+        background: rgba(217, 217, 217, 1);
+        border-radius: 50%;
+
+    }
+
+    &_account {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.36px;
+        color: rgba(0, 0, 0, 1);
+
+
+    }
+}
+
+.login-container {
+    position: relative;
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+.login-container input[type="password"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.login-container input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.login-container .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.login-container input[type="password"]:focus~.label,
+.login-container input[type="password"]:valid~.label {
+    top: -20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.login-container input[type="text"]:focus~.label,
+.login-container input[type="text"]:valid~.label {
+    top: -20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.login-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+.login-container input[type="password"]:focus~.underline,
+.login-container input[type="password"]:valid~.underline {
+    transform: scaleX(1);
+}
+
+.login-container input[type="text"]:focus~.underline,
+.login-container input[type="text"]:valid~.underline {
+    transform: scaleX(1);
+}
